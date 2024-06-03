@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Username</title>
+</head>
+<body>
+    <h1>Chat Room</h1>
+    <h3>Please choose your username</h3>
+    <form action="{{ url_for('set_username') }}" method="post">
+        <input type="text" name="name" placeholder="Enter your pseudonym" required><br>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
